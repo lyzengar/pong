@@ -1,5 +1,6 @@
 var canvas;
 var canvasContext;
+var ballX = 75, ballY = 75;
 
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');

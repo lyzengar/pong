@@ -6,7 +6,7 @@ window.onload = function() {
     canvas = document.getElementById('gameCanvas');
     canvasContext = canvas.getContext('2d');
 
-    drawEverything();
+    setInterval(drawEverything, 1000);
 }
 
 function drawEverything() {

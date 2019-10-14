@@ -17,6 +17,7 @@ function drawEverything() {
     // draw a circle
     canvasContext.fillStyle = 'white';
     canvasContext.beginPath();
-    canvasContext.arc(75, 75, 10, 0, Math.PI*2, true);
+    canvasContext.arc(ballX, ballY, 10, 0, Math.PI*2, true);
     canvasContext.fill();
+    ballX += 50;
 }

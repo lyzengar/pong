@@ -9,6 +9,10 @@ window.onload = function() {
     setInterval(drawEverything, 1000);
 }
 
+function moveEverything() {
+    ballX += 2; //move ball right
+}
+
 function drawEverything() {
     // background
     canvasContext.fillStyle = 'black';
@@ -19,5 +23,4 @@ function drawEverything() {
     canvasContext.beginPath();
     canvasContext.arc(ballX, ballY, 10, 0, Math.PI*2, true);
     canvasContext.fill();
-    ballX += 50;
 }

@@ -1,6 +1,7 @@
 var canvas;
 var canvasContext;
 var ballX = 75, ballY = 75;
+var ballSpeedX = 2;
 
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
@@ -14,7 +15,7 @@ window.onload = function() {
 }
 
 function moveEverything() {
-    ballX += 2; //move ball right
+    ballX += ballSpeedX; //move ball right
 }
 
 function drawEverything() {

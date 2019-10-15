@@ -5,8 +5,12 @@ var ballX = 75, ballY = 75;
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
     canvasContext = canvas.getContext('2d');
+    var framesPerSecond = 30;
 
-    setInterval(drawEverything, 1000);
+    setInterval(function() {
+        moveEverything();
+        drawEverything();
+    }, 1000/framesPerSecond);
 }
 
 function moveEverything() {

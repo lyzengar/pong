@@ -15,6 +15,8 @@ window.onload = function() {
 }
 
 function moveEverything() {
+    ballX > canvas.width ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
+    ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
     ballX += ballSpeedX; //move ball right
 }
 

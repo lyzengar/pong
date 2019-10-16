@@ -2,6 +2,7 @@ var canvas;
 var canvasContext;
 var ballX = 75, ballY = 75;
 var ballSpeedX = 2;
+var ballSpeedY = 2;
 
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
@@ -16,7 +17,9 @@ window.onload = function() {
 
 function moveEverything() {
     ballX > canvas.width ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
-    ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
+    ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off left side of screen
+    ballY > canvas.width ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
+    ballY < 0 ? ballSpeedX *= -1 : null; //reflect ball off left side of screen
     ballX += ballSpeedX; //move ball right
 }
 

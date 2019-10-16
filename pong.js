@@ -28,7 +28,9 @@ function drawEverything() {
     // background
     canvasContext.fillStyle = 'black';
     canvasContext.fillRect(0, 0, canvas.clientWidth, canvas.height);
-
+    //draw left paddle
+    canvasContext.fillStyle = 'white';
+    canvasContext.fillRect(0, 250, 10, 100);
     // draw a circle
     canvasContext.fillStyle = 'white';
     canvasContext.beginPath();

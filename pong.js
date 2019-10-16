@@ -30,12 +30,10 @@ function colorRect(topLeftX, topLeftY, boxWidth, boxHeight, fillColor) {
 }
 
 function drawEverything() {
-    // background
-    canvasContext.fillStyle = 'black';
-    canvasContext.fillRect(0, 0, canvas.clientWidth, canvas.height);
+    // draw background
+    colorRect(0, 0, canvas.clientWidth, canvas.height, 'black')
     //draw left paddle
-    canvasContext.fillStyle = 'white';
-    canvasContext.fillRect(0, 250, 10, 100);
+    colorRect(0, 250, 10, 100, 'white')
     // draw a circle
     canvasContext.fillStyle = 'white';
     canvasContext.beginPath();

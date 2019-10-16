@@ -24,8 +24,9 @@ function moveEverything() {
     ballY += ballSpeedY; //move ball down
 }
 
-function colorRect(topLeftX, topLeftY, bowWidth, boxHeight, fillColor) {
-    
+function colorRect(topLeftX, topLeftY, boxWidth, boxHeight, fillColor) {
+    canvasContext.fillStyle = fillColor;
+    canvasContext.fillRect(topLeftX, topLeftY, boxWidth, boxHeight);
 }
 
 function drawEverything() {

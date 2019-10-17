@@ -3,6 +3,8 @@ var canvasContext;
 var ballX = 75, ballY = 75;
 var ballSpeedX = 2;
 var ballSpeedY = 2;
+var paddle1Y = 250;
+const paddle1Height = 100;
 
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
@@ -40,7 +42,7 @@ function drawEverything() {
     // draw background
     colorRect(0, 0, canvas.clientWidth, canvas.height, 'black')
     //draw left paddle
-    colorRect(0, 250, 10, 100, 'white')
+    colorRect(0, paddle1Y, 10, paddle1Height, 'white')
     // draw the ball
     colorCircle(ballX, ballY, 10, 'white');
 }

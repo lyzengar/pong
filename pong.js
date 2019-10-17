@@ -29,6 +29,10 @@ function colorRect(topLeftX, topLeftY, boxWidth, boxHeight, fillColor) {
     canvasContext.fillRect(topLeftX, topLeftY, boxWidth, boxHeight);
 }
 
+function colorCircle(centerX, centerY, radius, fillColor) {
+    
+}
+
 function drawEverything() {
     // draw background
     colorRect(0, 0, canvas.clientWidth, canvas.height, 'black')

@@ -41,9 +41,6 @@ function drawEverything() {
     colorRect(0, 0, canvas.clientWidth, canvas.height, 'black')
     //draw left paddle
     colorRect(0, 250, 10, 100, 'white')
-    // draw a circle
-    canvasContext.fillStyle = 'white';
-    canvasContext.beginPath();
-    canvasContext.arc(ballX, ballY, 10, 0, Math.PI*2, true);
-    canvasContext.fill();
+    // draw the ball
+    colorCircle(ballX, ballY, 10, 'white');
 }

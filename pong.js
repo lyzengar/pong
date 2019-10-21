@@ -24,8 +24,9 @@ window.onload = function() {
 function moveEverything() {
     ballX > canvas.width || ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off sides of screen
     ballY > canvas.height || ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off bottom and top sides of screen
+    ballX < 0 && ballY < paddle1Y || ballX < 0 && ballY > paddle1Y + paddle1Height ? ballReset() : null;
     ballX += ballSpeedX; //move ball right
-    ballY += ballSpeedY; //move ball down
+    ballY += ballSpeedY; //move ball down   
 }
 
 function colorRect(topLeftX, topLeftY, boxWidth, boxHeight, fillColor) {
@@ -59,4 +60,8 @@ function calculateMousePos(evt) {
         x: mouseX,
         y: mouseY
     };
+}
+
+function ballReset() {
+    console.log("Player 1 loses")
 }

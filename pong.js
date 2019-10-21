@@ -22,10 +22,8 @@ window.onload = function() {
 }
 
 function moveEverything() {
-    ballX > canvas.width ? ballSpeedX *= -1 : null; //reflect ball off right side of screen
-    ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off left side of screen
-    ballY > canvas.height ? ballSpeedY *= -1 : null; //reflect ball off bottom side of screen
-    ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off top side of screen
+    ballX > canvas.width || ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off sides of screen
+    ballY > canvas.height || ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off bottom and top sides of screen
     ballX += ballSpeedX; //move ball right
     ballY += ballSpeedY; //move ball down
 }

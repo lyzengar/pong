@@ -9,6 +9,10 @@ const paddle1Height = 100;
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
     canvasContext = canvas.getContext('2d');
+    canvas.addEventListener('mousemove', function(evt) {
+        var mousePos = calculateMousePos(evt);
+        paddle1Y = mousePos.y - (paddle1Height/2); //vertically centered on mouse
+    })
     var framesPerSecond = 30;
 
     setInterval(function() {

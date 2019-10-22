@@ -48,9 +48,9 @@ function drawEverything() {
     // draw background
     colorRect(0, 0, canvas.clientWidth, canvas.height, 'black')
     //draw left paddle
-    colorRect(0, paddle1Y, 10, paddle1Height, 'white')
+    colorRect(0, paddle1Y, paddleWidth, paddle1Height, 'white')
     //draw right paddle
-    colorRect(canvas.width - 10, paddle2Y, 10, paddle2Height, 'white')
+    colorRect(canvas.width - paddleWidth, paddle2Y, paddleWidth, paddle2Height, 'white')
     // draw the ball
     colorCircle(ballX, ballY, 10, 'white');
 }

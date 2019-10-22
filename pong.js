@@ -7,6 +7,7 @@ var paddle1Y = 250;
 var paddle2Y = 250;
 const paddle1Height = 100;
 const paddle2Height = 100;
+const paddleWidth = 10;
 
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');

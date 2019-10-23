@@ -54,6 +54,9 @@ function drawEverything() {
     colorRect(canvas.width - paddleWidth, paddle2Y, paddleWidth, paddle2Height, 'white')
     // draw the ball
     colorCircle(ballX, ballY, 10, 'white');
+    //display scores
+    canvasContext.fillStyle = 'white';
+    canvasContext.fillText('stuff', 100, 100);
 }
 
 function calculateMousePos(evt) {

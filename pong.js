@@ -5,6 +5,7 @@ var ballSpeedX = 2;
 var ballSpeedY = 2;
 var paddle1Y = 250;
 var paddle2Y = 250;
+var leftScore = 0;
 const paddle1Height = 100;
 const paddle2Height = 100;
 const paddleWidth = 10;

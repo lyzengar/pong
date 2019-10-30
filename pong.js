@@ -28,6 +28,11 @@ window.onload = function() {
 
 function moveEverything() {
     ballX > canvas.width || ballX < 0 ? ballSpeedX *= -1 : null; //reflect ball off sides of screen
+    if(ballX < 0) {
+        if(ballY > paddle1Y && ballY < paddle1Y + paddle1Height){
+            
+        }
+    }
     ballY > canvas.height || ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off bottom and top sides of screen
     ballX < 0 && ballY < paddle1Y || ballX < 0 && ballY > paddle1Y + paddle1Height ? ballReset() : null;
     ballX > canvas.width && ballY < paddle2Y || ballX > canvas.width && ballY > paddle2Y + paddle2Height ? ballReset() : null;

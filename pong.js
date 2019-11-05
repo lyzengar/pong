@@ -31,6 +31,7 @@ function moveEverything() {
         if(ballY > paddle1Y && ballY < paddle1Y + paddle1Height){
             ballSpeedX *= -1
         } else {
+            rightScore += 1;
             ballReset();
         }
     }

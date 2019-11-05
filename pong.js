@@ -34,9 +34,16 @@ function moveEverything() {
             ballReset();
         }
     }
-    ballY > canvas.height || ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off bottom and top sides of screen
-    ballX < 0 && ballY < paddle1Y || ballX < 0 && ballY > paddle1Y + paddle1Height ? ballReset() : null;
-    ballX > canvas.width && ballY < paddle2Y || ballX > canvas.width && ballY > paddle2Y + paddle2Height ? ballReset() : null;
+    if(ballX > canvas.width) {
+        if(ballY > paddle2Y && ballY < paddle2Y + paddle2Height){
+            ballSpeedX *= -1
+        } else {
+            ballReset();
+        }
+    }
+    // ballY > canvas.height || ballY < 0 ? ballSpeedY *= -1 : null; //reflect ball off bottom and top sides of screen
+    // ballX < 0 && ballY < paddle1Y || ballX < 0 && ballY > paddle1Y + paddle1Height ? ballReset() : null;
+    // ballX > canvas.width && ballY < paddle2Y || ballX > canvas.width && ballY > paddle2Y + paddle2Height ? ballReset() : null;
     ballX += ballSpeedX; //move ball right
     ballY += ballSpeedY; //move ball down   
 }

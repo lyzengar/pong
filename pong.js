@@ -88,7 +88,6 @@ function calculateMousePos(evt) {
 }
 
 function ballReset() {
-    console.log("Player 1 loses")
     ballX = canvas.width / 2;
     ballY = canvas.height / 2;
 }

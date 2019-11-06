@@ -72,7 +72,7 @@ function drawEverything() {
     colorCircle(ballX, ballY, 10, 'white');
     //display scores
     canvasContext.fillStyle = 'white';
-    canvasContext.fillText('stuff', 100, 100);
+    canvasContext.fillText(leftScore, 100, 100);
 }
 
 function calculateMousePos(evt) {

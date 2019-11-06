@@ -29,7 +29,7 @@ window.onload = function() {
 function moveEverything() {
     if(ballX < 0) {
         if(ballY > paddle1Y && ballY < paddle1Y + paddle1Height){
-            ballSpeedX *= -1
+            ballSpeedX *= -1;
         } else {
             rightScore += 1;
             ballReset();
@@ -37,8 +37,9 @@ function moveEverything() {
     }
     if(ballX > canvas.width) {
         if(ballY > paddle2Y && ballY < paddle2Y + paddle2Height){
-            ballSpeedX *= -1
+            ballSpeedX *= -1;
         } else {
+            leftScore += 1;
             ballReset();
         }
     }

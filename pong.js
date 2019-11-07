@@ -74,6 +74,7 @@ function drawEverything() {
     //display scores
     canvasContext.fillStyle = 'white';
     canvasContext.fillText(leftScore, 100, 100);
+    canvasContext.fillText(rightScore, canvas.width - 100, 100);
 }
 
 function calculateMousePos(evt) {
